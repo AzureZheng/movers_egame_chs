@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.xchange.tr_movers_egame_chs_dx"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="9"/>
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon">
+					 
+        <!-- Tell Cocos2dxActivity the name of our .so -->
+        <meta-data android:name="android.app.lib_name"
+	              android:value="cocos2dcpp" />
+
+      <meta-data android:name="EGAME_LAUNCH_CONTROL" android:value= "1" />
+      <meta-data android:name="EGAME_LAUNCH_GAMEID" android:value= "5097323" />
+      <meta-data android:name="egame_channel_id" android:value= "10010000" />
+      
+        <activity android:name="cn.egame.terminal.sdk.tv.launch.EgameTvLaunchActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+      <meta-data android:name="EGAME_LAUNCH_ACTIVITY" android:value= "org.cocos2dx.cpp.AppActivity" />
+
+      <activity android:name="org.cocos2dx.cpp.AppActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
+      </activity>
+      
+      <!-- 友盟所需-->
+      <meta-data android:value="56df85af67e58e3b7a000747" android:name="UMENG_APPKEY"></meta-data>
+      <meta-data android:value="Egame" android:name="UMENG_CHANNEL"/>
+      
+    </application>
+
+    <supports-screens android:anyDensity="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"/>
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+  <!-- 爱游戏所需权限-->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest> 

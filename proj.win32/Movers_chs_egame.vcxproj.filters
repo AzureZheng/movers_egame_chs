@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\0-App">
+      <UniqueIdentifier>{357cce7e-ef3e-4569-8f83-d9d81677e316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\1-GlobalSetting">
+      <UniqueIdentifier>{c656b493-37bb-4462-855d-e38ab44a73cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\2-GlobalUtils">
+      <UniqueIdentifier>{6edae5de-6d4e-4289-ae0f-4f21f763ceb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\s-Objects">
+      <UniqueIdentifier>{2d27d929-9c55-408f-ac5f-98b64506bd17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\3-GameInfo">
+      <UniqueIdentifier>{9a3ac8f4-7bca-4723-8eec-688bd2dc1bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\s-UI">
+      <UniqueIdentifier>{ab5359e8-d633-4cb4-81d4-888e064dbf6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\s-SDKManage">
+      <UniqueIdentifier>{69ff5a11-fef3-4e9f-895d-586ca47723b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\4-OpeningScene">
+      <UniqueIdentifier>{e40b6f7f-f36a-4a9b-bdb8-3308a28e071f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\5-BuildingScene">
+      <UniqueIdentifier>{5bde1b4f-866b-4cf0-a5ef-32ba5207d245}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src\0-App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalUtils\CustomKeyEventDispatcher.cpp">
+      <Filter>src\2-GlobalUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalUtils\KeyButtonsPackage.cpp">
+      <Filter>src\2-GlobalUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalUtils\SpriteButton.cpp">
+      <Filter>src\2-GlobalUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Info\GameInfo.cpp">
+      <Filter>src\3-GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\MoversHomeScene.cpp">
+      <Filter>src\4-OpeningScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\OpeningScene.cpp">
+      <Filter>src\4-OpeningScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\BuildingScene.cpp">
+      <Filter>src\5-BuildingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\PlayerLayer.cpp">
+      <Filter>src\5-BuildingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Building.cpp">
+      <Filter>src\s-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\BuildingStage.cpp">
+      <Filter>src\s-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\MoversTruck.cpp">
+      <Filter>src\s-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\RabbitHamal.cpp">
+      <Filter>src\s-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\StageSide.cpp">
+      <Filter>src\s-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\ThrowableObject.cpp">
+      <Filter>src\s-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SDKManage\EgamePay.cpp">
+      <Filter>src\s-SDKManage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\BankView.cpp">
+      <Filter>src\s-UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\HPBar.cpp">
+      <Filter>src\s-UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\MoverGameUI.cpp">
+      <Filter>src\s-UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PushButton.cpp">
+      <Filter>src\s-UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ExitGameUI.cpp">
+      <Filter>src\s-UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SDKManage\Umeng.cpp">
+      <Filter>src\s-SDKManage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src\0-App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalUtils\SpriteButton.h">
+      <Filter>src\2-GlobalUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalUtils\CustomKeyEventDispatcher.h">
+      <Filter>src\2-GlobalUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalUtils\KeyButtonsPackage.h">
+      <Filter>src\2-GlobalUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FilePathDefine.h">
+      <Filter>src\1-GlobalSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalSetting.h">
+      <Filter>src\1-GlobalSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Info\GameInfo.h">
+      <Filter>src\3-GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\MoversHomeScene.h">
+      <Filter>src\4-OpeningScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\OpeningScene.h">
+      <Filter>src\4-OpeningScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\BuildingScene.h">
+      <Filter>src\5-BuildingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\PlayerLayer.h">
+      <Filter>src\5-BuildingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Building.h">
+      <Filter>src\s-Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\BuildingStage.h">
+      <Filter>src\s-Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\MoversTruck.h">
+      <Filter>src\s-Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\RabbitHamal.h">
+      <Filter>src\s-Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\StageSide.h">
+      <Filter>src\s-Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\ThrowableObject.h">
+      <Filter>src\s-Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SDKManage\EgamePay.h">
+      <Filter>src\s-SDKManage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\BankView.h">
+      <Filter>src\s-UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\HPBar.h">
+      <Filter>src\s-UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\MoverGameUI.h">
+      <Filter>src\s-UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PushButton.h">
+      <Filter>src\s-UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ExitGameUI.h">
+      <Filter>src\s-UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SDKManage\Umeng.h">
+      <Filter>src\s-SDKManage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
